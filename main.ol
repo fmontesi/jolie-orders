@@ -33,11 +33,11 @@ service App {
 				listUsers << {
 					template = "/api/user"
 					method = "get"
-					statusCodes.UserNotFound = 404
 				}
 				viewUser << {
 					template = "/api/user/{username}"
 					method = "get"
+					statusCodes.UserNotFound = 404
 				}
 			}
 		}
