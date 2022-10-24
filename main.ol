@@ -3,18 +3,9 @@ type User {
 	email: string
 	karma: int
 }
-
-type ListUsersRequest {
-	minKarma?: int
-}
-
-type ListUsersResponse {
-	usernames*: string
-}
-
-type ViewUserRequest {
-	username: string
-}
+type ListUsersRequest { minKarma?: int }
+type ListUsersResponse { usernames*: string }
+type ViewUserRequest { username: string }
 
 interface UsersInterface {
 RequestResponse:
